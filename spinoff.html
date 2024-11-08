@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Recipe Book</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        .toc {
+            background-color: #e0e4e7;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .toc a {
+            text-decoration: none;
+            color: #3498db;
+        }
+        .recipe {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .recipe h2 {
+            color: #e74c3c;
+            margin-bottom: 10px;
+        }
+        .ingredients, .steps {
+            margin-top: 10px;
+            font-size: 1rem;
+        }
+        .ingredients table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        .ingredients th, .ingredients td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .steps li {
+            margin: 8px 0;
+        }
+        .source {
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>My Favorite Recipes</h1>
+
+    <!-- Table of Contents -->
+    <div class="toc">
+        <h3>Table of Contents</h3>
+        <ul>
+            <li><a href="#recipe1">1. Classic Spaghetti Carbonara</a></li>
+            <li><a href="#recipe2">2. Chicken Caesar Salad</a></li>
+            <li><a href="#recipe3">3. Margherita Pizza</a></li>
+        </ul>
+    </div>
+
+    <!-- Spaghetti Recipe 1 -->
+    <div id="recipe1" class="recipe">
+        <h2>Classic Spaghetti Carbonara</h2>
+        <img src="https://media.istockphoto.com/id/1581084025/photo/plate-with-spaghetti-carbonara-on-a-laid-table.webp?a=1&b=1&s=612x612&w=0&k=20&c=jltdMvmObL0P3WhAr36EBm4MC0agmJPEwd7sAEfwNF4=" alt="Spaghetti Carbonara" width="400">
+        
+        <h3>Ingredients</h3>
+        <div class="ingredients">
+            <table>
+                <tr><th>Ingredient</th><th>Quantity</th></tr>
+                <tr><td>Spaghetti</td><td>400g</td></tr>
+                <tr><td>Eggs</td><td>4 large</td></tr>
+                <tr><td>Pancetta</td><td>200g</td></tr>
+                <tr><td>Parmesan Cheese</td><td>50g, grated</td></tr>
+                <tr><td>Black Pepper</td><td>to taste</td></tr>
+            </table>
+        </div>
+
+        <h3>Steps</h3>
+        <ol class="steps">
+            <li>Cook the spaghetti according to package instructions.</li>
+            <li>In a bowl, whisk together the eggs and grated Parmesan.</li>
+            <li>In a pan, cook the pancetta until crispy, then remove from heat.</li>
+            <li>Combine the pasta with pancetta and egg mixture, tossing to coat evenly.</li>
+            <li>Season with black pepper and serve immediately.</li>
+        </ol>
+
+        <p class="source">Recipe source: <a href="https://www.greatitalianchefs.com/recipes/spaghetti-carbonara-recipe" target="_blank">Great Italian Chefs</a></p>
+    </div>
+
+    <!-- Salad Recipe 2 -->
+    <div id="recipe2" class="recipe">
+        <h2>Chicken Caesar Salad</h2>
+        <img src="https://images.unsplash.com/photo-1582034986517-30d163aa1da9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Q2hpY2tlbiUyMENhZXNhciUyMFNhbGFkfGVufDB8fDB8fHww" alt="Chicken Caesar Salad" width="300">
+        
+        <h3>Ingredients</h3>
+        <div class="ingredients">
+            <table>
+                <tr><th>Ingredient</th><th>Quantity</th></tr>
+                <tr><td>Chicken Breast</td><td>200g, grilled</td></tr>
+                <tr><td>Romaine Lettuce</td><td>1 head</td></tr>
+                <tr><td>Croutons</td><td>1 cup</td></tr>
+                <tr><td>Caesar Dressing</td><td>1/2 cup</td></tr>
+                <tr><td>Parmesan Cheese</td><td>30g, shaved</td></tr>
+            </table>
+        </div>
+
+        <h3>Steps</h3>
+        <ol class="steps">
+            <li>Grill the chicken and slice it into strips.</li>
+            <li>Chop the lettuce and mix with Caesar dressing.</li>
+            <li>Top with grilled chicken, croutons, and Parmesan.</li>
+            <li>Serve immediately.</li>
+        </ol>
+
+        <p class="source">Recipe source: <a href="https://www.simplyrecipes.com/recipes/chicken_caesar_salad/" target="_blank">Simply Recipes</a></p>
+    </div>
+
+    <!-- Pizza Recipe 3 -->
+    <div id="recipe3" class="recipe">
+        <h2>Margherita Pizza</h2>
+        <img src="https://images.unsplash.com/photo-1573821663912-6df460f9c684?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8TWFyZ2hlcml0YSUyMFBpenphfGVufDB8fDB8fHww" alt="Margherita Pizza" width="300">
+        
+        <h3>Ingredients</h3>
+        <div class="ingredients">
+            <table>
+                <tr><th>Ingredient</th><th>Quantity</th></tr>
+                <tr><td>Pizza Dough</td><td>1 round</td></tr>
+                <tr><td>Tomato Sauce</td><td>1/2 cup</td></tr>
+                <tr><td>Fresh Mozzarella</td><td>100g</td></tr>
+                <tr><td>Fresh Basil</td><td>handful</td></tr>
+                <tr><td>Olive Oil</td><td>drizzle</td></tr>
+            </table>
+        </div>
+
+        <h3>Steps</h3>
+        <ol class="steps">
+            <li>Preheat the oven to 475°F (245°C).</li>
+            <li>Spread the tomato sauce over the dough.</li>
+            <li>Top with fresh mozzarella and basil leaves.</li>
+            <li>Bake for 10-12 minutes or until crust is golden.</li>
+            <li>Drizzle with olive oil and serve hot.</li>
+        </ol>
+
+        <p class="source">Recipe source: <a href="https://www.acouplecooks.com/easy-margherita-pizza/" target="_blank">A Couple Cooks</a></p>
+    </div>
+
+</body>
+</html>
